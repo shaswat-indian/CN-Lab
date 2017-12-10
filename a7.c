@@ -26,27 +26,23 @@ void delete()
 			return;
 		}
 		
-		for(int i=frontl;i<=rearl;i++)
-		{
-			printf("Deleted Element from Low PQ is %d\n",lpq[frontl]);
-			if(frontl==rearl)
-				frontl=rearl=-1;
-			else
-				frontl++;
-			return;
-		}
+		printf("Deleted Element from Low PQ is %d\n",lpq[frontl]);
+		if(frontl==rearl)
+			frontl=rearl=-1;
+		else
+			frontl++;
+		return;
+		
 
 	}
 
 	printf("Deleted Element from High PQ is %d\n",hpq[fronth]);
-	for(int i=fronth;i<=rearh;i++)
-	{
-		if(fronth==rearh)
-			fronth=rearh=-1;
-		else
-			fronth++;
-		return;
-	}
+	
+	if(fronth==rearh)
+		fronth=rearh=-1;
+	else
+		fronth++;
+	return;
 
 }
 
