@@ -6,7 +6,7 @@ int hpq[10],lpq[10],fronth=-1,rearh=-1,frontl=-1,rearl=-1,sizeh,sizel;
 
 void insert(int *queue,int *front,int *rear,int *size,int data)
 {
-	if(*rear==*size)
+	if(*rear==*size-1)
 	{
 		printf("\nQueue Overflow\n");
 		return;
